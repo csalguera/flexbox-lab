@@ -1,0 +1,385 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+:root {
+  --motiva-font: "Motiva Sans", Sans-serif;
+}
+
+body {
+  background-color: #171a21;
+/* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 940px;
+  height: 104px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #171a21;
+}
+
+img {
+  width: 176px;
+}
+
+#destinations >
+* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b8b6b4;
+  font-size: 14px;
+  text-transform: uppercase;
+  float: left;
+  padding: 30px 7px 7px;
+  font-family: var(--motiva-font);
+}
+
+#actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 238.844px;
+  height: 25px;
+  padding: 16px 0 0 0;
+}
+
+#actions >
+p {
+  padding: 0 6px;
+}
+
+#actions >
+button {
+  background-color: rgb(92, 126, 16);
+  color: rgb(229, 228, 220);
+  font-size: 11px;
+  font-family: var(--motiva-font);
+  padding: 5px 9px 5px 20px;
+  border: none;
+}
+
+#actions >
+p {
+  color: rgb(184, 182, 180);
+  font-size: 11px;
+  font-family: var(--motiva-font);
+}
+
+#subnav-bg {
+  background-color: black;
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+}
+
+#subnav {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 35px;
+  background-color: #274a89;
+  margin-top: 31px;
+}
+
+#subnav >
+div {
+  display: flex;
+  align-items: center;
+}
+
+.sub-destinations >
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e5e5e5;
+  font-size: 13px;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 0 10px 0 15px;
+}
+
+.sub-actions > {
+  width: 188px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.sub-actions >
+input {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+  width: 155px;
+  height: 26px;
+  margin: 1px 0 0 8px;
+  background-color: rgb(49, 98, 130);
+  color: rgb(14, 28, 37);
+  text-align: start;
+}
+
+.sub-actions >
+button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #559bc6;
+  border: none;
+}
+
+#img-placeholder {
+  background-color: black;
+  width: 100%;
+  height: 385px;
+  z-index: -1;
+}
+
+#home {
+  background-color: #1a2c3f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 25.2969px 0;
+}
+
+.sidebar {
+  width: 210px;
+  height: 842.859px;
+  top: 465px;
+  right: 997.562px;
+  bottom: -1307.86px;
+  left: 0;
+  z-index: 2;
+}
+
+.sidebar >
+.img {
+  width: 210px;
+  height: 115.86px;
+  background-color: gray;
+}
+
+.sidebar >
+.sub-title {
+  color: rgb(198, 212, 223);
+  font-size: 11px;
+  font-family: var(--motiva-font);
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  line-height: 16px;
+}
+
+.sidebar >
+p {
+  color: rgb(102, 192, 244);
+  font-size: 13px;
+  font-family: var(--motiva-font);
+  font-weight: 400;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  line-height: 16px;
+}
+
+.content {
+  width: 940px;
+  height: 412px;
+  margin: 0 20.203px;
+}
+
+.content >
+.screenshot,
+.info {
+  float: left;
+}
+
+.content >
+.title {
+  width: 940px;
+  height: 20px;
+  color: rgb(255, 255, 255);
+  font-family: var(--motiva-font);
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 2px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content >
+.screenshot {
+  width: 616px;
+  height: 353px;
+  background: gray;
+}
+
+.content >
+.info {
+  width: 314px;
+  height: 353px;
+  background-color: #0a141e;
+}
+
+.info >
+.appname {
+  width: 302px;
+  height: 52px;
+  padding: 4px 0 4px 16px;
+  font-size: 24px;
+  font-family: var(--motiva-font);
+  font-weight: 300;
+  text-transform: uppercase;
+  max-height: 62px;
+  color: rgb(255, 255, 255);
+}
+
+.info >
+.preview-1,
+.preview-2,
+.preview-3,
+.preview-4 {
+  width: 150px;
+  height: 69px;
+  background-color: black;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.info >
+.preview-2,
+.preview-4 {
+  margin-left: 10px;
+}
+
+.info >
+.status,
+.popularity {
+  display: flex;;
+}
+
+.info >
+.status {
+  width: 288px;
+  height: 18px;
+  color: rgb(255, 255, 255);
+  font-size: 21px;
+  font-family: var(--motiva-font);
+  padding: 6px 10px;
+  line-height: 18px;
+}
+
+.info >
+.popularity {
+  width: 298px;
+  height: 28px;
+  margin-top: 5px;
+}
+
+.popularity >
+button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  line-height: 19px;
+  margin-bottom: 3px;
+  margin-right: 2px;
+  max-width: 200px;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  width: 33.656px;
+  height: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  font-family: var(--motiva-font);
+  line-height: 12px;
+  padding: 0 6px;
+  margin-top: 70px;
+  margin-left: 10px;
+  float: left;
+}
+
+.platforms {
+  width: 60px;
+  height: 23px;
+  margin-top: 60px;
+  float: right;
+}
+
+.carousal {
+  width: 940px;
+  height: 37px;
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousal >
+button {
+  width: 15px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(198, 212, 223);
+  margin: 0 2px;
+  padding: 3px 9px;
+  border: none;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  margin-top: -250px;
+  width: 23px;
+  height: 36px;
+  font-family: var(--motiva-font);;
+}
+
+.left-arrow >
+button,
+.right-arrow >
+button {
+  padding: 30px 10px;
+  background-color: #182537;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  border: none;
+}
+
+.left-arrow {
+  margin-left: -50px;
+}
+
+.right-arrow {
+  margin-left: 930px;
+}
